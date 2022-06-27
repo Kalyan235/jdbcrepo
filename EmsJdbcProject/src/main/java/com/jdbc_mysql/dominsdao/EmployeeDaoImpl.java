@@ -22,6 +22,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	public Employee insert(Employee employee) {
 
 		try {
+			System.out.println("This is my insert method");
 			connection = ConnectionUtil.openConnection();
 			ps = connection.prepareStatement(EmployeeQueries.INSERT_QUERIES);
 
